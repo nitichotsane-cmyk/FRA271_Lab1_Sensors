@@ -2642,19 +2642,19 @@ LOAD C:/ProgramData/MATLAB/SupportPackages/R2025a/3P.instrset/gnuarm-armcortex.i
  .text.Encoder_re_DigitalPortRead_Term
                 0x080011ec       0x22 Encoder_reader_simulink.c.o
                 0x080011ec                Encoder_re_DigitalPortRead_Term
- .text.Encoder_reader_simu_Homing_Init
+ .text.Encoder_reader_sim_Homing1_Init
                 0x0800120e       0x1c Encoder_reader_simulink.c.o
-                0x0800120e                Encoder_reader_simu_Homing_Init
- .text.Encoder_reader_simulink_Homing
+                0x0800120e                Encoder_reader_sim_Homing1_Init
+ .text.Encoder_reader_simulink_Homing1
                 0x0800122a       0x68 Encoder_reader_simulink.c.o
-                0x0800122a                Encoder_reader_simulink_Homing
- .text.Encoder_reader__WrapAround_Init
+                0x0800122a                Encoder_reader_simulink_Homing1
+ .text.Encoder_reader_WrapAround1_Init
                 0x08001292       0x1c Encoder_reader_simulink.c.o
-                0x08001292                Encoder_reader__WrapAround_Init
+                0x08001292                Encoder_reader_WrapAround1_Init
  *fill*         0x080012ae        0x2 
- .text.Encoder_reader_simul_WrapAround
+ .text.Encoder_reader_simu_WrapAround1
                 0x080012b0      0x14c Encoder_reader_simulink.c.o
-                0x080012b0                Encoder_reader_simul_WrapAround
+                0x080012b0                Encoder_reader_simu_WrapAround1
  .text.Encoder_read_SystemCore_setup_j
                 0x080013fc       0x94 Encoder_reader_simulink.c.o
  .text.Encoder_rea_SystemCore_setup_j2
@@ -4694,94 +4694,94 @@ LOAD C:/ProgramData/MATLAB/SupportPackages/R2025a/3P.instrset/gnuarm-armcortex.i
  .debug_rnglists
                 0x0000170c      0x2ef stm_timer_ll.c.o
 
-.debug_line     0x00000000    0x1b12c
+.debug_line     0x00000000    0x1b136
  .debug_line    0x00000000      0x89b xcp_ext_mode.c.o
- .debug_line    0x0000089b     0x13c9 Encoder_reader_simulink.c.o
- .debug_line    0x00001c64      0x69d ert_main.c.o
- .debug_line    0x00002301      0x160 rt_nonfinite.c.o
- .debug_line    0x00002461      0x766 xcp_ext_common.c.o
- .debug_line    0x00002bc7      0x6f1 xcp_ext_classic_trigger.c.o
- .debug_line    0x000032b8      0xcc9 xcp.c.o
- .debug_line    0x00003f81      0x990 xcp_standard.c.o
- .debug_line    0x00004911     0x1b3c xcp_daq.c.o
- .debug_line    0x0000644d      0x65a xcp_calibration.c.o
- .debug_line    0x00006aa7      0x420 xcp_fifo.c.o
- .debug_line    0x00006ec7      0xa11 xcp_transport.c.o
- .debug_line    0x000078d8      0xae0 xcp_mem_default.c.o
- .debug_line    0x000083b8      0x738 xcp_drv_rtiostream.c.o
- .debug_line    0x00008af0      0x178 xcp_utils.c.o
- .debug_line    0x00008c68      0x8ab xcp_frame_serial.c.o
- .debug_line    0x00009513      0x2f3 xcp_ext_param_default_serial.c.o
- .debug_line    0x00009806      0x27c overrideHALDelay.c.o
- .debug_line    0x00009a82      0x4ce platform_timer.c.o
- .debug_line    0x00009f50      0x4f3 SysTickScheduler.c.o
- .debug_line    0x0000a443      0x273 m3m4m4f_multitasking.c.o
- .debug_line    0x0000a6b6      0x4a4 rtiostream_serial.c.o
- .debug_line    0x0000ab5a      0x77c stm_usart.c.o
- .debug_line    0x0000b2d6     0x163b stm_lpuart.c.o
- .debug_line    0x0000c911      0x365 sys_arch_arm.c.o
- .debug_line    0x0000cc76      0xf1b main.c.o
- .debug_line    0x0000db91      0x3ce stm32g4xx_it.c.o
- .debug_line    0x0000df5f      0x2e1 stm32g4xx_hal_msp.c.o
- .debug_line    0x0000e240      0x37d stm32g4xx_hal_timebase_tim.c.o
- .debug_line    0x0000e5bd      0x8b5 stm32g4xx_ll_utils.c.o
- .debug_line    0x0000ee72     0x3bcb stm32g4xx_hal_tim.c.o
- .debug_line    0x00012a3d     0x1c4c stm32g4xx_hal_tim_ex.c.o
- .debug_line    0x00014689      0x69d stm32g4xx_ll_gpio.c.o
- .debug_line    0x00014d26      0x43c stm32g4xx_ll_lpuart.c.o
- .debug_line    0x00015162      0xf72 stm32g4xx_ll_rcc.c.o
- .debug_line    0x000160d4      0x787 stm32g4xx_hal.c.o
- .debug_line    0x0001685b      0xbc5 stm32g4xx_hal_rcc.c.o
- .debug_line    0x00017420      0x8ea stm32g4xx_hal_pwr_ex.c.o
- .debug_line    0x00017d0a      0x8bb stm32g4xx_hal_cortex.c.o
- .debug_line    0x000185c5      0xa6f stm32g4xx_ll_tim.c.o
- .debug_line    0x00019034      0x313 system_stm32g4xx.c.o
- .debug_line    0x00019347     0x1de5 stm_timer_ll.c.o
+ .debug_line    0x0000089b     0x13d3 Encoder_reader_simulink.c.o
+ .debug_line    0x00001c6e      0x69d ert_main.c.o
+ .debug_line    0x0000230b      0x160 rt_nonfinite.c.o
+ .debug_line    0x0000246b      0x766 xcp_ext_common.c.o
+ .debug_line    0x00002bd1      0x6f1 xcp_ext_classic_trigger.c.o
+ .debug_line    0x000032c2      0xcc9 xcp.c.o
+ .debug_line    0x00003f8b      0x990 xcp_standard.c.o
+ .debug_line    0x0000491b     0x1b3c xcp_daq.c.o
+ .debug_line    0x00006457      0x65a xcp_calibration.c.o
+ .debug_line    0x00006ab1      0x420 xcp_fifo.c.o
+ .debug_line    0x00006ed1      0xa11 xcp_transport.c.o
+ .debug_line    0x000078e2      0xae0 xcp_mem_default.c.o
+ .debug_line    0x000083c2      0x738 xcp_drv_rtiostream.c.o
+ .debug_line    0x00008afa      0x178 xcp_utils.c.o
+ .debug_line    0x00008c72      0x8ab xcp_frame_serial.c.o
+ .debug_line    0x0000951d      0x2f3 xcp_ext_param_default_serial.c.o
+ .debug_line    0x00009810      0x27c overrideHALDelay.c.o
+ .debug_line    0x00009a8c      0x4ce platform_timer.c.o
+ .debug_line    0x00009f5a      0x4f3 SysTickScheduler.c.o
+ .debug_line    0x0000a44d      0x273 m3m4m4f_multitasking.c.o
+ .debug_line    0x0000a6c0      0x4a4 rtiostream_serial.c.o
+ .debug_line    0x0000ab64      0x77c stm_usart.c.o
+ .debug_line    0x0000b2e0     0x163b stm_lpuart.c.o
+ .debug_line    0x0000c91b      0x365 sys_arch_arm.c.o
+ .debug_line    0x0000cc80      0xf1b main.c.o
+ .debug_line    0x0000db9b      0x3ce stm32g4xx_it.c.o
+ .debug_line    0x0000df69      0x2e1 stm32g4xx_hal_msp.c.o
+ .debug_line    0x0000e24a      0x37d stm32g4xx_hal_timebase_tim.c.o
+ .debug_line    0x0000e5c7      0x8b5 stm32g4xx_ll_utils.c.o
+ .debug_line    0x0000ee7c     0x3bcb stm32g4xx_hal_tim.c.o
+ .debug_line    0x00012a47     0x1c4c stm32g4xx_hal_tim_ex.c.o
+ .debug_line    0x00014693      0x69d stm32g4xx_ll_gpio.c.o
+ .debug_line    0x00014d30      0x43c stm32g4xx_ll_lpuart.c.o
+ .debug_line    0x0001516c      0xf72 stm32g4xx_ll_rcc.c.o
+ .debug_line    0x000160de      0x787 stm32g4xx_hal.c.o
+ .debug_line    0x00016865      0xbc5 stm32g4xx_hal_rcc.c.o
+ .debug_line    0x0001742a      0x8ea stm32g4xx_hal_pwr_ex.c.o
+ .debug_line    0x00017d14      0x8bb stm32g4xx_hal_cortex.c.o
+ .debug_line    0x000185cf      0xa6f stm32g4xx_ll_tim.c.o
+ .debug_line    0x0001903e      0x313 system_stm32g4xx.c.o
+ .debug_line    0x00019351     0x1de5 stm_timer_ll.c.o
 
-.debug_str      0x00000000     0xc2cf
- .debug_str     0x00000000     0xc2cf xcp_ext_mode.c.o
+.debug_str      0x00000000     0xc2e7
+ .debug_str     0x00000000     0xc2e7 xcp_ext_mode.c.o
                                 0xb37 (size before relaxing)
- .debug_str     0x0000c2cf     0x1d87 Encoder_reader_simulink.c.o
- .debug_str     0x0000c2cf     0x1012 ert_main.c.o
- .debug_str     0x0000c2cf      0x292 rt_nonfinite.c.o
- .debug_str     0x0000c2cf      0x8a7 xcp_ext_common.c.o
- .debug_str     0x0000c2cf      0x92e xcp_ext_classic_trigger.c.o
- .debug_str     0x0000c2cf     0x13f7 xcp.c.o
- .debug_str     0x0000c2cf      0xe99 xcp_standard.c.o
- .debug_str     0x0000c2cf     0x1650 xcp_daq.c.o
- .debug_str     0x0000c2cf      0x997 xcp_calibration.c.o
- .debug_str     0x0000c2cf      0x377 xcp_fifo.c.o
- .debug_str     0x0000c2cf      0x8c0 xcp_transport.c.o
- .debug_str     0x0000c2cf      0x73d xcp_mem_default.c.o
- .debug_str     0x0000c2cf      0x62a xcp_drv_rtiostream.c.o
- .debug_str     0x0000c2cf      0x1f2 xcp_utils.c.o
- .debug_str     0x0000c2cf      0x71c xcp_frame_serial.c.o
- .debug_str     0x0000c2cf      0x32a xcp_ext_param_default_serial.c.o
- .debug_str     0x0000c2cf      0x2ff overrideHALDelay.c.o
- .debug_str     0x0000c2cf      0x425 platform_timer.c.o
- .debug_str     0x0000c2cf      0xade SysTickScheduler.c.o
- .debug_str     0x0000c2cf      0x2e7 m3m4m4f_multitasking.c.o
- .debug_str     0x0000c2cf      0x76a rtiostream_serial.c.o
- .debug_str     0x0000c2cf      0x824 stm_usart.c.o
- .debug_str     0x0000c2cf     0x1588 stm_lpuart.c.o
- .debug_str     0x0000c2cf      0x336 sys_arch_arm.c.o
- .debug_str     0x0000c2cf     0x1a92 main.c.o
- .debug_str     0x0000c2cf      0x994 stm32g4xx_it.c.o
- .debug_str     0x0000c2cf      0x43f stm32g4xx_hal_msp.c.o
- .debug_str     0x0000c2cf     0x1141 stm32g4xx_hal_timebase_tim.c.o
- .debug_str     0x0000c2cf      0x8ca stm32g4xx_ll_utils.c.o
- .debug_str     0x0000c2cf     0x191b stm32g4xx_hal_tim.c.o
- .debug_str     0x0000c2cf     0x158e stm32g4xx_hal_tim_ex.c.o
- .debug_str     0x0000c2cf      0x557 stm32g4xx_ll_gpio.c.o
- .debug_str     0x0000c2cf      0x5a0 stm32g4xx_ll_lpuart.c.o
- .debug_str     0x0000c2cf      0xadf stm32g4xx_ll_rcc.c.o
- .debug_str     0x0000c2cf      0xeb5 stm32g4xx_hal.c.o
- .debug_str     0x0000c2cf      0x8cb stm32g4xx_hal_rcc.c.o
- .debug_str     0x0000c2cf      0x858 stm32g4xx_hal_pwr_ex.c.o
- .debug_str     0x0000c2cf      0xe0b stm32g4xx_hal_cortex.c.o
- .debug_str     0x0000c2cf      0xab2 stm32g4xx_ll_tim.c.o
- .debug_str     0x0000c2cf      0x43d system_stm32g4xx.c.o
- .debug_str     0x0000c2cf     0x12e7 stm_timer_ll.c.o
+ .debug_str     0x0000c2e7     0x1d99 Encoder_reader_simulink.c.o
+ .debug_str     0x0000c2e7     0x1012 ert_main.c.o
+ .debug_str     0x0000c2e7      0x292 rt_nonfinite.c.o
+ .debug_str     0x0000c2e7      0x8a7 xcp_ext_common.c.o
+ .debug_str     0x0000c2e7      0x92e xcp_ext_classic_trigger.c.o
+ .debug_str     0x0000c2e7     0x13f7 xcp.c.o
+ .debug_str     0x0000c2e7      0xe99 xcp_standard.c.o
+ .debug_str     0x0000c2e7     0x1650 xcp_daq.c.o
+ .debug_str     0x0000c2e7      0x997 xcp_calibration.c.o
+ .debug_str     0x0000c2e7      0x377 xcp_fifo.c.o
+ .debug_str     0x0000c2e7      0x8c0 xcp_transport.c.o
+ .debug_str     0x0000c2e7      0x73d xcp_mem_default.c.o
+ .debug_str     0x0000c2e7      0x62a xcp_drv_rtiostream.c.o
+ .debug_str     0x0000c2e7      0x1f2 xcp_utils.c.o
+ .debug_str     0x0000c2e7      0x71c xcp_frame_serial.c.o
+ .debug_str     0x0000c2e7      0x32a xcp_ext_param_default_serial.c.o
+ .debug_str     0x0000c2e7      0x2ff overrideHALDelay.c.o
+ .debug_str     0x0000c2e7      0x425 platform_timer.c.o
+ .debug_str     0x0000c2e7      0xade SysTickScheduler.c.o
+ .debug_str     0x0000c2e7      0x2e7 m3m4m4f_multitasking.c.o
+ .debug_str     0x0000c2e7      0x76a rtiostream_serial.c.o
+ .debug_str     0x0000c2e7      0x824 stm_usart.c.o
+ .debug_str     0x0000c2e7     0x1588 stm_lpuart.c.o
+ .debug_str     0x0000c2e7      0x336 sys_arch_arm.c.o
+ .debug_str     0x0000c2e7     0x1a92 main.c.o
+ .debug_str     0x0000c2e7      0x994 stm32g4xx_it.c.o
+ .debug_str     0x0000c2e7      0x43f stm32g4xx_hal_msp.c.o
+ .debug_str     0x0000c2e7     0x1141 stm32g4xx_hal_timebase_tim.c.o
+ .debug_str     0x0000c2e7      0x8ca stm32g4xx_ll_utils.c.o
+ .debug_str     0x0000c2e7     0x191b stm32g4xx_hal_tim.c.o
+ .debug_str     0x0000c2e7     0x158e stm32g4xx_hal_tim_ex.c.o
+ .debug_str     0x0000c2e7      0x557 stm32g4xx_ll_gpio.c.o
+ .debug_str     0x0000c2e7      0x5a0 stm32g4xx_ll_lpuart.c.o
+ .debug_str     0x0000c2e7      0xadf stm32g4xx_ll_rcc.c.o
+ .debug_str     0x0000c2e7      0xeb5 stm32g4xx_hal.c.o
+ .debug_str     0x0000c2e7      0x8cb stm32g4xx_hal_rcc.c.o
+ .debug_str     0x0000c2e7      0x858 stm32g4xx_hal_pwr_ex.c.o
+ .debug_str     0x0000c2e7      0xe0b stm32g4xx_hal_cortex.c.o
+ .debug_str     0x0000c2e7      0xab2 stm32g4xx_ll_tim.c.o
+ .debug_str     0x0000c2e7      0x43d system_stm32g4xx.c.o
+ .debug_str     0x0000c2e7     0x12e7 stm_timer_ll.c.o
 
 .comment        0x00000000       0x44
  .comment       0x00000000       0x44 xcp_ext_mode.c.o

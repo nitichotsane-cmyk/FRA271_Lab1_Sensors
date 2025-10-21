@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'Encoder_reader_simulink'.
  *
- * Model version                  : 2.5
+ * Model version                  : 2.6
  * Simulink Coder version         : 25.1 (R2025a) 21-Nov-2024
- * C/C++ source code generated on : Thu Oct  9 02:03:35 2025
+ * C/C++ source code generated on : Wed Oct 15 00:48:47 2025
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -89,140 +89,140 @@ typedef struct {
   boolean_T objisempty;                /* '<S17>/Digital Port Read' */
 } DW_DigitalPortRead_Encoder_re_T;
 
-/* Block states (default storage) for system '<Root>/Homing' */
+/* Block states (default storage) for system '<Root>/Homing1' */
 typedef struct {
-  int32_T sfEvent;                     /* '<Root>/Homing' */
-  boolean_T doneDoubleBufferReInit;    /* '<Root>/Homing' */
-} DW_Homing_Encoder_reader_simu_T;
+  int32_T sfEvent;                     /* '<Root>/Homing1' */
+  boolean_T doneDoubleBufferReInit;    /* '<Root>/Homing1' */
+} DW_Homing1_Encoder_reader_sim_T;
 
-/* Block states (default storage) for system '<Root>/WrapAround' */
+/* Block states (default storage) for system '<Root>/WrapAround1' */
 typedef struct {
-  int32_T sfEvent;                     /* '<Root>/WrapAround' */
-  boolean_T doneDoubleBufferReInit;    /* '<Root>/WrapAround' */
-} DW_WrapAround_Encoder_reader__T;
+  int32_T sfEvent;                     /* '<Root>/WrapAround1' */
+  boolean_T doneDoubleBufferReInit;    /* '<Root>/WrapAround1' */
+} DW_WrapAround1_Encoder_reader_T;
 
 /* Block signals (default storage) */
 typedef struct {
-  real_T Sum3;                         /* '<Root>/Sum3' */
-  real_T DataTypeConversion1;          /* '<Root>/Data Type Conversion1' */
-  real_T Count2Deg;                    /* '<Root>/Count2Deg' */
-  real_T Derivative2;                  /* '<Root>/Derivative2' */
-  real_T Derivative3;                  /* '<Root>/Derivative3' */
-  real_T Count2Rad;                    /* '<Root>/Count2Rad' */
-  real_T Derivative;                   /* '<Root>/Derivative' */
-  real_T Derivative1;                  /* '<Root>/Derivative1' */
-  real_T DataTypeConversion2;          /* '<Root>/Data Type Conversion2' */
-  real_T Count2Deg1;                   /* '<Root>/Count2Deg1' */
-  real_T Derivative6;                  /* '<Root>/Derivative6' */
-  real_T Derivative7;                  /* '<Root>/Derivative7' */
-  real_T Count2Rad1;                   /* '<Root>/Count2Rad1' */
-  real_T Derivative4;                  /* '<Root>/Derivative4' */
-  real_T Derivative5;                  /* '<Root>/Derivative5' */
-  real_T DataTypeConversion3;          /* '<Root>/Data Type Conversion3' */
-  real_T Count2Deg2;                   /* '<Root>/Count2Deg2' */
-  real_T Derivative10;                 /* '<Root>/Derivative10' */
-  real_T Derivative11;                 /* '<Root>/Derivative11' */
-  real_T Count2Rad2;                   /* '<Root>/Count2Rad2' */
-  real_T Derivative8;                  /* '<Root>/Derivative8' */
-  real_T Derivative9;                  /* '<Root>/Derivative9' */
-  real_T wrapsout;                     /* '<Root>/WrapAround3' */
-  real_T wrapsout_h;                   /* '<Root>/WrapAround2' */
-  real_T wrapsout_d;                   /* '<Root>/WrapAround' */
-  real_T out_e;                        /* '<Root>/Homing3' */
-  real_T homing_pos_out;               /* '<Root>/Homing3' */
-  real_T out_j;                        /* '<Root>/Homing2' */
-  real_T homing_pos_out_g;             /* '<Root>/Homing2' */
-  real_T out_m;                        /* '<Root>/Homing' */
-  real_T homing_pos_out_g4;            /* '<Root>/Homing' */
-  uint32_T TIM4_Encoder1;              /* '<Root>/TIM4_Encoder1' */
-  uint32_T TIM3_Encoder;               /* '<Root>/TIM3_Encoder' */
-  uint32_T TIM20_Encoder2;             /* '<Root>/TIM20_Encoder2' */
-  boolean_T DigitalPortRead_m;         /* '<S33>/Digital Port Read' */
-  boolean_T DigitalPortRead_o;         /* '<S31>/Digital Port Read' */
-  boolean_T DigitalPortRead_b;         /* '<S27>/Digital Port Read' */
-  boolean_T DigitalPortRead_g;         /* '<S25>/Digital Port Read' */
-  boolean_T DigitalPortRead_op;        /* '<S21>/Digital Port Read' */
-  B_DigitalPortRead_Encoder_rea_T DigitalPortRead_dw;/* '<S17>/Digital Port Read' */
-  B_DigitalPortRead_Encoder_rea_T DigitalPortRead_l;/* '<S17>/Digital Port Read' */
+  real_T Sum7;                         /* '<Root>/Sum7' */
+  real_T DataTypeConversion4;          /* '<Root>/Data Type Conversion4' */
+  real_T Count2Deg3;                   /* '<Root>/Count2Deg3' */
+  real_T Derivative16;                 /* '<Root>/Derivative16' */
+  real_T Derivative17;                 /* '<Root>/Derivative17' */
+  real_T Count2Rad3;                   /* '<Root>/Count2Rad3' */
+  real_T Derivative12;                 /* '<Root>/Derivative12' */
+  real_T Derivative13;                 /* '<Root>/Derivative13' */
+  real_T DataTypeConversion5;          /* '<Root>/Data Type Conversion5' */
+  real_T Count2Deg4;                   /* '<Root>/Count2Deg4' */
+  real_T Derivative20;                 /* '<Root>/Derivative20' */
+  real_T Derivative21;                 /* '<Root>/Derivative21' */
+  real_T Count2Rad4;                   /* '<Root>/Count2Rad4' */
+  real_T Derivative18;                 /* '<Root>/Derivative18' */
+  real_T Derivative19;                 /* '<Root>/Derivative19' */
+  real_T DataTypeConversion6;          /* '<Root>/Data Type Conversion6' */
+  real_T Count2Deg5;                   /* '<Root>/Count2Deg5' */
+  real_T Derivative14;                 /* '<Root>/Derivative14' */
+  real_T Derivative15;                 /* '<Root>/Derivative15' */
+  real_T Count2Rad5;                   /* '<Root>/Count2Rad5' */
+  real_T Derivative22;                 /* '<Root>/Derivative22' */
+  real_T Derivative23;                 /* '<Root>/Derivative23' */
+  real_T wrapsout;                     /* '<Root>/WrapAround5' */
+  real_T wrapsout_c;                   /* '<Root>/WrapAround4' */
+  real_T wrapsout_cm;                  /* '<Root>/WrapAround1' */
+  real_T out_m;                        /* '<Root>/Homing5' */
+  real_T homing_pos_out;               /* '<Root>/Homing5' */
+  real_T out_a;                        /* '<Root>/Homing4' */
+  real_T homing_pos_out_f;             /* '<Root>/Homing4' */
+  real_T out_h;                        /* '<Root>/Homing1' */
+  real_T homing_pos_out_o;             /* '<Root>/Homing1' */
+  uint32_T TIM4_Encoder2;              /* '<Root>/TIM4_Encoder2' */
+  uint32_T TIM3_Encoder1;              /* '<Root>/TIM3_Encoder1' */
+  uint32_T TIM20_Encoder1;             /* '<Root>/TIM20_Encoder1' */
+  boolean_T DigitalPortRead_b;         /* '<S31>/Digital Port Read' */
+  boolean_T DigitalPortRead_o;         /* '<S29>/Digital Port Read' */
+  boolean_T DigitalPortRead_bb;        /* '<S25>/Digital Port Read' */
+  boolean_T DigitalPortRead_d;         /* '<S23>/Digital Port Read' */
+  boolean_T DigitalPortRead_g;         /* '<S19>/Digital Port Read' */
+  B_DigitalPortRead_Encoder_rea_T DigitalPortRead_oc;/* '<S17>/Digital Port Read' */
+  B_DigitalPortRead_Encoder_rea_T DigitalPortRead_f;/* '<S17>/Digital Port Read' */
   B_DigitalPortRead_Encoder_rea_T DigitalPortRead;/* '<S17>/Digital Port Read' */
 } B_Encoder_reader_simulink_T;
 
 /* Block states (default storage) for system '<Root>' */
 typedef struct {
-  stm32cube_blocks_DigitalPortR_T obj; /* '<S33>/Digital Port Read' */
-  stm32cube_blocks_DigitalPortR_T obj_h;/* '<S31>/Digital Port Read' */
-  stm32cube_blocks_DigitalPortR_T obj_p;/* '<S27>/Digital Port Read' */
-  stm32cube_blocks_DigitalPortR_T obj_n;/* '<S25>/Digital Port Read' */
-  stm32cube_blocks_DigitalPortR_T obj_d;/* '<S23>/Digital Port Read' */
-  stm32cube_blocks_DigitalPortR_T obj_g;/* '<S21>/Digital Port Read' */
-  stm32cube_blocks_EncoderBlock_T obj_ng;/* '<Root>/TIM4_Encoder1' */
-  stm32cube_blocks_EncoderBlock_T obj_pe;/* '<Root>/TIM3_Encoder' */
-  stm32cube_blocks_EncoderBlock_T obj_dx;/* '<Root>/TIM20_Encoder2' */
-  real_T UnitDelay_DSTATE;             /* '<Root>/Unit Delay' */
-  real_T UnitDelay1_DSTATE;            /* '<Root>/Unit Delay1' */
-  real_T UnitDelay2_DSTATE;            /* '<Root>/Unit Delay2' */
-  real_T UnitDelay3_DSTATE;            /* '<Root>/Unit Delay3' */
-  real_T UnitDelay4_DSTATE;            /* '<Root>/Unit Delay4' */
-  real_T UnitDelay5_DSTATE;            /* '<Root>/Unit Delay5' */
-  real_T Memory_PreviousInput;         /* '<Root>/Memory' */
-  real_T TimeStampA;                   /* '<Root>/Derivative2' */
-  real_T LastUAtTimeA;                 /* '<Root>/Derivative2' */
-  real_T TimeStampB;                   /* '<Root>/Derivative2' */
-  real_T LastUAtTimeB;                 /* '<Root>/Derivative2' */
-  real_T TimeStampA_b;                 /* '<Root>/Derivative3' */
-  real_T LastUAtTimeA_d;               /* '<Root>/Derivative3' */
-  real_T TimeStampB_b;                 /* '<Root>/Derivative3' */
-  real_T LastUAtTimeB_l;               /* '<Root>/Derivative3' */
-  real_T TimeStampA_o;                 /* '<Root>/Derivative' */
-  real_T LastUAtTimeA_e;               /* '<Root>/Derivative' */
-  real_T TimeStampB_l;                 /* '<Root>/Derivative' */
-  real_T LastUAtTimeB_h;               /* '<Root>/Derivative' */
-  real_T TimeStampA_p;                 /* '<Root>/Derivative1' */
-  real_T LastUAtTimeA_g;               /* '<Root>/Derivative1' */
-  real_T TimeStampB_n;                 /* '<Root>/Derivative1' */
-  real_T LastUAtTimeB_c;               /* '<Root>/Derivative1' */
-  real_T Memory1_PreviousInput;        /* '<Root>/Memory1' */
-  real_T TimeStampA_k;                 /* '<Root>/Derivative6' */
-  real_T LastUAtTimeA_h;               /* '<Root>/Derivative6' */
-  real_T TimeStampB_k;                 /* '<Root>/Derivative6' */
-  real_T LastUAtTimeB_i;               /* '<Root>/Derivative6' */
-  real_T TimeStampA_p0;                /* '<Root>/Derivative7' */
-  real_T LastUAtTimeA_p;               /* '<Root>/Derivative7' */
-  real_T TimeStampB_d;                 /* '<Root>/Derivative7' */
-  real_T LastUAtTimeB_ck;              /* '<Root>/Derivative7' */
-  real_T TimeStampA_f;                 /* '<Root>/Derivative4' */
-  real_T LastUAtTimeA_l;               /* '<Root>/Derivative4' */
-  real_T TimeStampB_dj;                /* '<Root>/Derivative4' */
-  real_T LastUAtTimeB_lu;              /* '<Root>/Derivative4' */
-  real_T TimeStampA_pr;                /* '<Root>/Derivative5' */
-  real_T LastUAtTimeA_gx;              /* '<Root>/Derivative5' */
-  real_T TimeStampB_p;                 /* '<Root>/Derivative5' */
-  real_T LastUAtTimeB_j;               /* '<Root>/Derivative5' */
-  real_T Memory2_PreviousInput;        /* '<Root>/Memory2' */
-  real_T TimeStampA_n;                 /* '<Root>/Derivative10' */
-  real_T LastUAtTimeA_j;               /* '<Root>/Derivative10' */
-  real_T TimeStampB_bx;                /* '<Root>/Derivative10' */
-  real_T LastUAtTimeB_m;               /* '<Root>/Derivative10' */
-  real_T TimeStampA_m;                 /* '<Root>/Derivative11' */
-  real_T LastUAtTimeA_gb;              /* '<Root>/Derivative11' */
-  real_T TimeStampB_ne;                /* '<Root>/Derivative11' */
-  real_T LastUAtTimeB_b;               /* '<Root>/Derivative11' */
-  real_T TimeStampA_ne;                /* '<Root>/Derivative8' */
-  real_T LastUAtTimeA_c;               /* '<Root>/Derivative8' */
-  real_T TimeStampB_ly;                /* '<Root>/Derivative8' */
-  real_T LastUAtTimeB_d;               /* '<Root>/Derivative8' */
-  real_T TimeStampA_d;                 /* '<Root>/Derivative9' */
-  real_T LastUAtTimeA_ha;              /* '<Root>/Derivative9' */
-  real_T TimeStampB_p1;                /* '<Root>/Derivative9' */
-  real_T LastUAtTimeB_p;               /* '<Root>/Derivative9' */
-  DW_WrapAround_Encoder_reader__T sf_WrapAround3;/* '<Root>/WrapAround3' */
-  DW_WrapAround_Encoder_reader__T sf_WrapAround2;/* '<Root>/WrapAround2' */
-  DW_WrapAround_Encoder_reader__T sf_WrapAround;/* '<Root>/WrapAround' */
-  DW_Homing_Encoder_reader_simu_T sf_Homing3;/* '<Root>/Homing3' */
-  DW_Homing_Encoder_reader_simu_T sf_Homing2;/* '<Root>/Homing2' */
-  DW_Homing_Encoder_reader_simu_T sf_Homing;/* '<Root>/Homing' */
-  DW_DigitalPortRead_Encoder_re_T DigitalPortRead_dw;/* '<S17>/Digital Port Read' */
-  DW_DigitalPortRead_Encoder_re_T DigitalPortRead_l;/* '<S17>/Digital Port Read' */
+  stm32cube_blocks_DigitalPortR_T obj; /* '<S31>/Digital Port Read' */
+  stm32cube_blocks_DigitalPortR_T obj_n;/* '<S29>/Digital Port Read' */
+  stm32cube_blocks_DigitalPortR_T obj_h;/* '<S25>/Digital Port Read' */
+  stm32cube_blocks_DigitalPortR_T obj_a;/* '<S23>/Digital Port Read' */
+  stm32cube_blocks_DigitalPortR_T obj_o;/* '<S21>/Digital Port Read' */
+  stm32cube_blocks_DigitalPortR_T obj_m;/* '<S19>/Digital Port Read' */
+  stm32cube_blocks_EncoderBlock_T obj_e;/* '<Root>/TIM4_Encoder2' */
+  stm32cube_blocks_EncoderBlock_T obj_c;/* '<Root>/TIM3_Encoder1' */
+  stm32cube_blocks_EncoderBlock_T obj_hg;/* '<Root>/TIM20_Encoder1' */
+  real_T UnitDelay6_DSTATE;            /* '<Root>/Unit Delay6' */
+  real_T UnitDelay7_DSTATE;            /* '<Root>/Unit Delay7' */
+  real_T UnitDelay8_DSTATE;            /* '<Root>/Unit Delay8' */
+  real_T UnitDelay9_DSTATE;            /* '<Root>/Unit Delay9' */
+  real_T UnitDelay10_DSTATE;           /* '<Root>/Unit Delay10' */
+  real_T UnitDelay11_DSTATE;           /* '<Root>/Unit Delay11' */
+  real_T Memory3_PreviousInput;        /* '<Root>/Memory3' */
+  real_T TimeStampA;                   /* '<Root>/Derivative16' */
+  real_T LastUAtTimeA;                 /* '<Root>/Derivative16' */
+  real_T TimeStampB;                   /* '<Root>/Derivative16' */
+  real_T LastUAtTimeB;                 /* '<Root>/Derivative16' */
+  real_T TimeStampA_d;                 /* '<Root>/Derivative17' */
+  real_T LastUAtTimeA_a;               /* '<Root>/Derivative17' */
+  real_T TimeStampB_m;                 /* '<Root>/Derivative17' */
+  real_T LastUAtTimeB_o;               /* '<Root>/Derivative17' */
+  real_T TimeStampA_p;                 /* '<Root>/Derivative12' */
+  real_T LastUAtTimeA_g;               /* '<Root>/Derivative12' */
+  real_T TimeStampB_n;                 /* '<Root>/Derivative12' */
+  real_T LastUAtTimeB_a;               /* '<Root>/Derivative12' */
+  real_T TimeStampA_e;                 /* '<Root>/Derivative13' */
+  real_T LastUAtTimeA_c;               /* '<Root>/Derivative13' */
+  real_T TimeStampB_mf;                /* '<Root>/Derivative13' */
+  real_T LastUAtTimeB_i;               /* '<Root>/Derivative13' */
+  real_T Memory4_PreviousInput;        /* '<Root>/Memory4' */
+  real_T TimeStampA_m;                 /* '<Root>/Derivative20' */
+  real_T LastUAtTimeA_a2;              /* '<Root>/Derivative20' */
+  real_T TimeStampB_m5;                /* '<Root>/Derivative20' */
+  real_T LastUAtTimeB_h;               /* '<Root>/Derivative20' */
+  real_T TimeStampA_n;                 /* '<Root>/Derivative21' */
+  real_T LastUAtTimeA_a0;              /* '<Root>/Derivative21' */
+  real_T TimeStampB_e;                 /* '<Root>/Derivative21' */
+  real_T LastUAtTimeB_b;               /* '<Root>/Derivative21' */
+  real_T TimeStampA_pz;                /* '<Root>/Derivative18' */
+  real_T LastUAtTimeA_l;               /* '<Root>/Derivative18' */
+  real_T TimeStampB_k;                 /* '<Root>/Derivative18' */
+  real_T LastUAtTimeB_l;               /* '<Root>/Derivative18' */
+  real_T TimeStampA_k;                 /* '<Root>/Derivative19' */
+  real_T LastUAtTimeA_cs;              /* '<Root>/Derivative19' */
+  real_T TimeStampB_eu;                /* '<Root>/Derivative19' */
+  real_T LastUAtTimeB_h5;              /* '<Root>/Derivative19' */
+  real_T Memory5_PreviousInput;        /* '<Root>/Memory5' */
+  real_T TimeStampA_mk;                /* '<Root>/Derivative14' */
+  real_T LastUAtTimeA_n;               /* '<Root>/Derivative14' */
+  real_T TimeStampB_c;                 /* '<Root>/Derivative14' */
+  real_T LastUAtTimeB_g;               /* '<Root>/Derivative14' */
+  real_T TimeStampA_j;                 /* '<Root>/Derivative15' */
+  real_T LastUAtTimeA_p;               /* '<Root>/Derivative15' */
+  real_T TimeStampB_l;                 /* '<Root>/Derivative15' */
+  real_T LastUAtTimeB_e;               /* '<Root>/Derivative15' */
+  real_T TimeStampA_dq;                /* '<Root>/Derivative22' */
+  real_T LastUAtTimeA_gv;              /* '<Root>/Derivative22' */
+  real_T TimeStampB_p;                 /* '<Root>/Derivative22' */
+  real_T LastUAtTimeB_k;               /* '<Root>/Derivative22' */
+  real_T TimeStampA_ki;                /* '<Root>/Derivative23' */
+  real_T LastUAtTimeA_k;               /* '<Root>/Derivative23' */
+  real_T TimeStampB_h;                 /* '<Root>/Derivative23' */
+  real_T LastUAtTimeB_c;               /* '<Root>/Derivative23' */
+  DW_WrapAround1_Encoder_reader_T sf_WrapAround5;/* '<Root>/WrapAround5' */
+  DW_WrapAround1_Encoder_reader_T sf_WrapAround4;/* '<Root>/WrapAround4' */
+  DW_WrapAround1_Encoder_reader_T sf_WrapAround1;/* '<Root>/WrapAround1' */
+  DW_Homing1_Encoder_reader_sim_T sf_Homing5;/* '<Root>/Homing5' */
+  DW_Homing1_Encoder_reader_sim_T sf_Homing4;/* '<Root>/Homing4' */
+  DW_Homing1_Encoder_reader_sim_T sf_Homing1;/* '<Root>/Homing1' */
+  DW_DigitalPortRead_Encoder_re_T DigitalPortRead_oc;/* '<S17>/Digital Port Read' */
+  DW_DigitalPortRead_Encoder_re_T DigitalPortRead_f;/* '<S17>/Digital Port Read' */
   DW_DigitalPortRead_Encoder_re_T DigitalPortRead;/* '<S17>/Digital Port Read' */
 } DW_Encoder_reader_simulink_T;
 
@@ -299,39 +299,39 @@ extern volatile boolean_T runModel;
  * Here is the system hierarchy for this model
  *
  * '<Root>' : 'Encoder_reader_simulink'
- * '<S1>'   : 'Encoder_reader_simulink/Digital Port Read'
- * '<S2>'   : 'Encoder_reader_simulink/Digital Port Read1'
- * '<S3>'   : 'Encoder_reader_simulink/Digital Port Read2'
- * '<S4>'   : 'Encoder_reader_simulink/Digital Port Read3'
- * '<S5>'   : 'Encoder_reader_simulink/Digital Port Read4'
- * '<S6>'   : 'Encoder_reader_simulink/Digital Port Read5'
- * '<S7>'   : 'Encoder_reader_simulink/Digital Port Read6'
- * '<S8>'   : 'Encoder_reader_simulink/Digital Port Read7'
- * '<S9>'   : 'Encoder_reader_simulink/Digital Port Read8'
- * '<S10>'  : 'Encoder_reader_simulink/Homing'
- * '<S11>'  : 'Encoder_reader_simulink/Homing2'
- * '<S12>'  : 'Encoder_reader_simulink/Homing3'
- * '<S13>'  : 'Encoder_reader_simulink/WrapAround'
- * '<S14>'  : 'Encoder_reader_simulink/WrapAround2'
- * '<S15>'  : 'Encoder_reader_simulink/WrapAround3'
- * '<S16>'  : 'Encoder_reader_simulink/Digital Port Read/ECSoC'
- * '<S17>'  : 'Encoder_reader_simulink/Digital Port Read/ECSoC/ECSimCodegen'
- * '<S18>'  : 'Encoder_reader_simulink/Digital Port Read1/ECSoC'
- * '<S19>'  : 'Encoder_reader_simulink/Digital Port Read1/ECSoC/ECSimCodegen'
- * '<S20>'  : 'Encoder_reader_simulink/Digital Port Read2/ECSoC'
- * '<S21>'  : 'Encoder_reader_simulink/Digital Port Read2/ECSoC/ECSimCodegen'
- * '<S22>'  : 'Encoder_reader_simulink/Digital Port Read3/ECSoC'
- * '<S23>'  : 'Encoder_reader_simulink/Digital Port Read3/ECSoC/ECSimCodegen'
- * '<S24>'  : 'Encoder_reader_simulink/Digital Port Read4/ECSoC'
- * '<S25>'  : 'Encoder_reader_simulink/Digital Port Read4/ECSoC/ECSimCodegen'
- * '<S26>'  : 'Encoder_reader_simulink/Digital Port Read5/ECSoC'
- * '<S27>'  : 'Encoder_reader_simulink/Digital Port Read5/ECSoC/ECSimCodegen'
- * '<S28>'  : 'Encoder_reader_simulink/Digital Port Read6/ECSoC'
- * '<S29>'  : 'Encoder_reader_simulink/Digital Port Read6/ECSoC/ECSimCodegen'
- * '<S30>'  : 'Encoder_reader_simulink/Digital Port Read7/ECSoC'
- * '<S31>'  : 'Encoder_reader_simulink/Digital Port Read7/ECSoC/ECSimCodegen'
- * '<S32>'  : 'Encoder_reader_simulink/Digital Port Read8/ECSoC'
- * '<S33>'  : 'Encoder_reader_simulink/Digital Port Read8/ECSoC/ECSimCodegen'
+ * '<S1>'   : 'Encoder_reader_simulink/Digital Port Read10'
+ * '<S2>'   : 'Encoder_reader_simulink/Digital Port Read11'
+ * '<S3>'   : 'Encoder_reader_simulink/Digital Port Read12'
+ * '<S4>'   : 'Encoder_reader_simulink/Digital Port Read13'
+ * '<S5>'   : 'Encoder_reader_simulink/Digital Port Read14'
+ * '<S6>'   : 'Encoder_reader_simulink/Digital Port Read15'
+ * '<S7>'   : 'Encoder_reader_simulink/Digital Port Read16'
+ * '<S8>'   : 'Encoder_reader_simulink/Digital Port Read17'
+ * '<S9>'   : 'Encoder_reader_simulink/Digital Port Read9'
+ * '<S10>'  : 'Encoder_reader_simulink/Homing1'
+ * '<S11>'  : 'Encoder_reader_simulink/Homing4'
+ * '<S12>'  : 'Encoder_reader_simulink/Homing5'
+ * '<S13>'  : 'Encoder_reader_simulink/WrapAround1'
+ * '<S14>'  : 'Encoder_reader_simulink/WrapAround4'
+ * '<S15>'  : 'Encoder_reader_simulink/WrapAround5'
+ * '<S16>'  : 'Encoder_reader_simulink/Digital Port Read10/ECSoC'
+ * '<S17>'  : 'Encoder_reader_simulink/Digital Port Read10/ECSoC/ECSimCodegen'
+ * '<S18>'  : 'Encoder_reader_simulink/Digital Port Read11/ECSoC'
+ * '<S19>'  : 'Encoder_reader_simulink/Digital Port Read11/ECSoC/ECSimCodegen'
+ * '<S20>'  : 'Encoder_reader_simulink/Digital Port Read12/ECSoC'
+ * '<S21>'  : 'Encoder_reader_simulink/Digital Port Read12/ECSoC/ECSimCodegen'
+ * '<S22>'  : 'Encoder_reader_simulink/Digital Port Read13/ECSoC'
+ * '<S23>'  : 'Encoder_reader_simulink/Digital Port Read13/ECSoC/ECSimCodegen'
+ * '<S24>'  : 'Encoder_reader_simulink/Digital Port Read14/ECSoC'
+ * '<S25>'  : 'Encoder_reader_simulink/Digital Port Read14/ECSoC/ECSimCodegen'
+ * '<S26>'  : 'Encoder_reader_simulink/Digital Port Read15/ECSoC'
+ * '<S27>'  : 'Encoder_reader_simulink/Digital Port Read15/ECSoC/ECSimCodegen'
+ * '<S28>'  : 'Encoder_reader_simulink/Digital Port Read16/ECSoC'
+ * '<S29>'  : 'Encoder_reader_simulink/Digital Port Read16/ECSoC/ECSimCodegen'
+ * '<S30>'  : 'Encoder_reader_simulink/Digital Port Read17/ECSoC'
+ * '<S31>'  : 'Encoder_reader_simulink/Digital Port Read17/ECSoC/ECSimCodegen'
+ * '<S32>'  : 'Encoder_reader_simulink/Digital Port Read9/ECSoC'
+ * '<S33>'  : 'Encoder_reader_simulink/Digital Port Read9/ECSoC/ECSimCodegen'
  */
 #endif                                 /* Encoder_reader_simulink_h_ */
 

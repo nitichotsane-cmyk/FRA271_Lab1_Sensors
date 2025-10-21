@@ -1,5 +1,5 @@
 % โหลดข้อมูลจากไฟล์
-load('Hall_sensor_value1.mat');  
+load('Hall_sensor_value2.mat');  
 
 % ดึงข้อมูลจาก test.data
 signal = squeeze(noise_sample{1}.Values.Data);   % แปลงจาก 1x1xN → Nx1

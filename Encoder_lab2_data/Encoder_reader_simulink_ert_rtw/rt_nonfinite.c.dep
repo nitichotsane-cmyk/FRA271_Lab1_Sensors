@@ -1,0 +1,6 @@
+rt_nonfinite.c.o: \
+ C:/Users/nitic/Documents/GitHub/FRA271_Lab1_Sensors/Encoder_lab2_data/Encoder_reader_simulink_ert_rtw/rt_nonfinite.c \
+ C:/Users/nitic/Documents/GitHub/FRA271_Lab1_Sensors/Encoder_lab2_data/Encoder_reader_simulink_ert_rtw/rtwtypes.h \
+ C:/Users/nitic/Documents/GitHub/FRA271_Lab1_Sensors/Encoder_lab2_data/Encoder_reader_simulink_ert_rtw/rt_nonfinite.h
+C:/Users/nitic/Documents/GitHub/FRA271_Lab1_Sensors/Encoder_lab2_data/Encoder_reader_simulink_ert_rtw/rtwtypes.h:
+C:/Users/nitic/Documents/GitHub/FRA271_Lab1_Sensors/Encoder_lab2_data/Encoder_reader_simulink_ert_rtw/rt_nonfinite.h:

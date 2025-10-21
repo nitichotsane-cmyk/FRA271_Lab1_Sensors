@@ -7,9 +7,9 @@
  *
  * Code generation for model "Encoder_reader_simulink".
  *
- * Model version              : 2.5
+ * Model version              : 2.6
  * Simulink Coder version : 25.1 (R2025a) 21-Nov-2024
- * C source code generated on : Thu Oct  9 02:03:35 2025
+ * C source code generated on : Wed Oct 15 00:48:47 2025
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M

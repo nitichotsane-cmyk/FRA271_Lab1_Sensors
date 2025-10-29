@@ -1,0 +1,34 @@
+database_North = [3240.87, 3248.83, 2712.77, 2269.09, 2053.57, 1941.35, 1878.73, 1835.19, 1808.20, 1790.88, 1774.10];
+database_South = [166.94, 174.50, 844.49, 1186.80, 1377.76, 1494.05, 1533.74, 1578.79, 1641.73, 1658.42, 1658.96];
+
+distance = [13, 16, 19, 22, 25, 28, 31, 34, 37, 40, 43];
+
+combined_data = [database_South,flip(database_North)]; % Combine North and South data for further analysis
+database_North = (database_North-1650)/60;
+database_South = (database_South-1650)/60;
+middle = mean([database_North(end), database_South(end)]);
+combined_data2 = [database_South,flip(database_North)];
+
+
+
+figure;
+plot(combined_data2, combined_data, 'DisplayName', 'no Shield', 'LineWidth', 2);
+hold on;
+xline(0, 'w--', 'DisplayName', 'ref line', 'LineWidth', 2);
+xline(middle,'r--', 'DisplayName', 'Middle Value', 'LineWidth', 2)
+xlabel('Magnetic Flux Density(mT)');
+ylabel('Vout(mV)');
+title('กราฟแสดงความสัมพันธ์ระหว่าง Vout และ Magnetic Flux Density (no Shield)');
+grid on;
+legend show;
+
+% yline(0, 'r--', 'DisplayName', 'Magnetic flux density at 0 mT', 'LineWidth', 2);
+% hold on;
+% plot(distance, database_North, 'DisplayName', 'North Data', 'LineWidth', 2);
+% hold on;
+% plot(distance, database_South, 'DisplayName', 'South Data', 'LineWidth', 2);
+% xlabel('Distance(mm)');
+% ylabel('Magnetic Fluxdensity(mT)');
+% title('กราฟแสดงแนวโน้มระหว่างค่าเฉลี่ย Magnetic Fluxdensity และ ระยะห่างของแม่เหล็กและเซ็นเซอร์ (no Shield)');
+% grid on;
+% legend show;

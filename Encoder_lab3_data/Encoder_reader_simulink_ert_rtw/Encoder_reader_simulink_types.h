@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'Encoder_reader_simulink'.
  *
- * Model version                  : 2.6
+ * Model version                  : 2.7
  * Simulink Coder version         : 25.1 (R2025a) 21-Nov-2024
- * C/C++ source code generated on : Tue Oct 14 00:03:16 2025
+ * C/C++ source code generated on : Wed Oct 29 19:39:49 2025
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -40,7 +40,7 @@ typedef struct tag_oqTgs9IQV1qnhaQ2GI62yC stm32cube_blocks_DigitalPortR_T;
 
 #endif                             /* typedef_stm32cube_blocks_DigitalPortR_T */
 
-/* Custom Type definition for MATLABSystem: '<Root>/TIM4_Encoder1' */
+/* Custom Type definition for MATLABSystem: '<Root>/TIM4_Encoder2' */
 #include "stm_timer_ll.h"
 #include "stm_timer_ll.h"
 #ifndef struct_tag_qYaJQJIsmU5kxDdgK7jtpE

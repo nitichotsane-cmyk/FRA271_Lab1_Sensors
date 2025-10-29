@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'Encoder_reader_simulink'.
  *
- * Model version                  : 2.6
+ * Model version                  : 2.7
  * Simulink Coder version         : 25.1 (R2025a) 21-Nov-2024
- * C/C++ source code generated on : Tue Oct 14 00:03:16 2025
+ * C/C++ source code generated on : Wed Oct 29 19:39:49 2025
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -47,16 +47,16 @@ extern void Encoder_re_DigitalPortRead_Init(DW_DigitalPortRead_Encoder_re_T
   *localDW);
 extern void Encoder_reader__DigitalPortRead(B_DigitalPortRead_Encoder_rea_T
   *localB);
-extern void Encoder_reader_simu_Homing_Init(DW_Homing_Encoder_reader_simu_T
+extern void Encoder_reader_sim_Homing1_Init(DW_Homing1_Encoder_reader_sim_T
   *localDW);
-extern void Encoder_reader_simulink_Homing(real_T rtu_raw, boolean_T
+extern void Encoder_reader_simulink_Homing1(real_T rtu_raw, boolean_T
   rtu_homing_sig, real_T rtu_homing_pos_in, real_T *rty_out, real_T
-  *rty_homing_pos_out, DW_Homing_Encoder_reader_simu_T *localDW);
-extern void Encoder_reader__WrapAround_Init(DW_WrapAround_Encoder_reader__T
+  *rty_homing_pos_out, DW_Homing1_Encoder_reader_sim_T *localDW);
+extern void Encoder_reader_WrapAround1_Init(DW_WrapAround1_Encoder_reader_T
   *localDW);
-extern void Encoder_reader_simul_WrapAround(real_T rtu_raw, real_T rtu_diff,
+extern void Encoder_reader_simu_WrapAround1(real_T rtu_raw, real_T rtu_diff,
   real_T rtu_wrapsin, real_T *rty_out, real_T *rty_wrapsout,
-  DW_WrapAround_Encoder_reader__T *localDW);
+  DW_WrapAround1_Encoder_reader_T *localDW);
 extern void Encoder_re_DigitalPortRead_Term(DW_DigitalPortRead_Encoder_re_T
   *localDW);
 

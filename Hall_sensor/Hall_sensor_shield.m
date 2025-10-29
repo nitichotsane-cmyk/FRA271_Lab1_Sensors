@@ -1,0 +1,54 @@
+database_North = [3075.54, 3076.37, 2460.53, 2030.57 ,1925.65, 1844.26, 1721.74, 1706.97, 1679.49, 1678.35, 1661.75];
+database_South = [74.54, 112.71, 878.18, 1190.53, 1357.32, 1470.47, 1531.65, 1576.48, 1598.07, 1613.63, 1623.46];
+distance = [13, 16, 19, 22, 25, 28, 31, 34, 37, 40, 43];
+combined_data = [database_South,flip(database_North)]; % Combine North and South data for further analysis
+database_North = (database_North-1650)/60;
+database_South = (database_South-1650)/60;
+middle = mean([database_North(end), database_South(end)]);
+combined_data2 = [database_South,flip(database_North)];
+
+
+
+figure;
+plot(combined_data2, combined_data, 'DisplayName', 'Shield', 'LineWidth', 2);
+hold on;
+xline(0, 'w--', 'DisplayName', 'ref line', 'LineWidth', 2);
+xline(middle,'r--', 'DisplayName', 'Middle Value', 'LineWidth', 2)
+xlabel('Magnetic Flux Density(mT)');
+ylabel('Vout(mV)');
+title('กราฟแสดงความสัมพันธ์ระหว่าง Vout และ Magnetic Flux Density (Shield)');
+grid on;
+legend show;
+
+% combine everything
+% figure;
+% plot(assume_fluxdencity(1:length(filtered_data)), filtered_data, 'o', 'DisplayName', 'Filtered Data');
+% hold on;
+% plot(assume_fluxdencity(1:length(filtered_data)), fitted_values, '-', 'DisplayName', 'Fitted Values');
+% xlabel('Assumed Flux Density');
+% ylabel('Values');
+% title('Filtered Data and Fitted Values');
+% legend show;
+% hold off;
+
+% Data เวอร์ชั่นรวม
+% figure;
+% plot(assume_fluxdencity, combined_data, 'DisplayName', 'Combined Data');
+% xlabel('Assumed Flux Density');
+% ylabel('Combined Data Values');
+% title('Plot of Combined Data against Assumed Flux Density');
+% legend show;
+
+% Data เวอร์ชั่นแยก
+
+% plot(distance, database_North, 'DisplayName', 'North Data', 'LineWidth', 2);
+% hold on;
+% plot(distance, database_South, 'DisplayName', 'South Data', 'LineWidth', 2);
+% xlabel('Distance(mm)');
+% ylabel('Magnetic Fluxdensity(mT)');
+% title('กราฟแสดงแนวโน้มระหว่างค่าเฉลี่ย Magnetic Fluxdensity และ ระยะห่างของแม่เหล็กและเซ็นเซอร์ (Shield)');
+% grid on;
+% legend('North Data', 'South Data'); % Show only line labels in the legend
+% yline(0, 'r--', 'DisplayName', 'Magnetic flux density at 0 mT', 'LineWidth', 2);
+% hold on;
+
